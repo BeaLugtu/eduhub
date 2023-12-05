@@ -122,17 +122,6 @@
                         <Pane prefHeight="81.0" prefWidth="597.0" HBox.hgrow="ALWAYS" />
                         <HBox alignment="CENTER_RIGHT" prefHeight="81.0" prefWidth="557.0" spacing="10.0">
                            <children>
-                              <TextField prefHeight="45.0" prefWidth="258.0" promptText="Type to Search" styleClass="txtFieldTranparent" stylesheets="@../style/adminlogin.css">
-                                 <font>
-                                    <Font name="Arial" size="12.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                                 <HBox.margin>
-                                    <Insets right="20.0" />
-                                 </HBox.margin>
-                              </TextField>
                               <Line endX="-99.99995422363281" endY="31.172897338867188" startX="-100.0" stroke="WHITE" strokeWidth="0.4">
                                  <HBox.margin>
                                     <Insets right="10.0" />
@@ -982,7 +971,7 @@
                   <Insets top="10.0" />
                </opaqueInsets>
             </Pane>
-            <Pane fx:id="calendarButton" layoutX="20.0" layoutY="161.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
+            <Pane fx:id="calendarButton" layoutX="20.0" layoutY="150.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
                <children>
                   <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="19.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -999,7 +988,7 @@
                   <Insets top="10.0" />
                </opaqueInsets>
             </Pane>
-            <Pane fx:id="studentManagementButton" layoutX="20.0" layoutY="118.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
+            <Pane fx:id="studentManagementButton" layoutX="20.0" layoutY="193.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
                <children>
                   <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="19.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -1016,7 +1005,7 @@
                   <Insets top="10.0" />
                </opaqueInsets>
             </Pane>
-            <Pane fx:id="timeClockButton" layoutX="20.0" layoutY="247.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
+            <Pane fx:id="timeClockButton" layoutX="20.0" layoutY="486.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css" visible="false">
                <children>
                   <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="19.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -1033,7 +1022,7 @@
                   <Insets top="10.0" />
                </opaqueInsets>
             </Pane>
-            <Pane fx:id="announcementButton" layoutX="20.0" layoutY="204.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
+            <Pane fx:id="announcementButton" layoutX="20.0" layoutY="109.0" onMouseClicked="#SwitchForm" prefHeight="43.0" prefWidth="306.0" styleClass="navigationButton" stylesheets="@../style/userdashboard.css">
                <children>
                   <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="19.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                      <image>

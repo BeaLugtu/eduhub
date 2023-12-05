@@ -74,7 +74,7 @@
             <Font name="Arial" size="11.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="199.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms of Service." underline="true">
+      <Text fill="WHITE" layoutX="199.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms of Service." underline="true">
          <font>
             <Font name="Arial" size="11.0" />
          </font>
@@ -82,7 +82,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Text>
-      <Text fill="WHITE" layoutX="108.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Privacy Policy" underline="true">
+      <Text fill="WHITE" layoutX="108.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Privacy Policy" underline="true">
          <font>
             <Font name="Arial" size="11.0" />
          </font>

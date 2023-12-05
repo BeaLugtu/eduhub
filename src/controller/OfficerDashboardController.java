@@ -283,9 +283,9 @@ public class OfficerDashboardController implements Initializable {
 
         sidePanel.setVisible(true);
         homeWindow.setVisible(false);
-        announcementWindow.setVisible(false);
+        announcementWindow.setVisible(true);
         calendarWindow.setVisible(false);
-        studentManagementWIndow.setVisible(true);
+        studentManagementWIndow.setVisible(false);
         timeClockWindow.setVisible(false);
 
         timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::updateTimer));
