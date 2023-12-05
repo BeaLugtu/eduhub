@@ -282,10 +282,10 @@ public class OfficerDashboardController implements Initializable {
         drawCalendarForBigCalendar();
 
         sidePanel.setVisible(true);
-        homeWindow.setVisible(true);
+        homeWindow.setVisible(false);
         announcementWindow.setVisible(false);
         calendarWindow.setVisible(false);
-        studentManagementWIndow.setVisible(false);
+        studentManagementWIndow.setVisible(true);
         timeClockWindow.setVisible(false);
 
         timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::updateTimer));
@@ -390,19 +390,20 @@ public class OfficerDashboardController implements Initializable {
             userDashboradWindow.getScene().getWindow().hide();
 
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/view/selectRoleWindow.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/view/signInWindow.fxml"));
                 Stage newStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-                stage.setWidth(843);
-                stage.setHeight(511);
+                ((Node) (event.getSource())).getScene().getWindow().hide();
+                stage.setWidth(785);
+                stage.setHeight(514);
 
                 Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
                 double centerX = screenBounds.getMinX() + screenBounds.getWidth() / 2.0;
                 double centerY = screenBounds.getMinY() + screenBounds.getHeight() / 2.0;
-                stage.setX(centerX - 421.5);
-                stage.setY(centerY - 255.5);
+                stage.setX(centerX - 392.5);
+                stage.setY(centerY - 257);
 
-                Scene scene = new Scene(root, 843, 511);
+                Scene scene = new Scene(root, 785, 514);
 
                 stage.setScene(scene);
                 stage.show();
@@ -474,7 +475,7 @@ public class OfficerDashboardController implements Initializable {
         slider1.play();
     }
 
-    private Pane lastClickedButton = homeButton;
+    private Pane lastClickedButton = studentManagementButton;
 
     @FXML
     public void SwitchForm(MouseEvent event) {
@@ -486,27 +487,14 @@ public class OfficerDashboardController implements Initializable {
             return;
         }
 
-        if (clickedButton == homeButton) {
+        if (clickedButton == studentManagementButton) {
             // ... (rest of the code remains the same)
         }
 
         try {
             // Update the last clicked button
             lastClickedButton = clickedButton;
-            if (clickedButton == homeButton) {
-                setButtonColor(homeButton, true);
-                setButtonColor(announcementButton, false);
-                setButtonColor(calendarButton, false);
-                setButtonColor(studentManagementButton, false);
-                setButtonColor(timeClockButton, false);
-
-                homeWindow.setVisible(true);
-                announcementWindow.setVisible(false);
-                calendarWindow.setVisible(false);
-                studentManagementWIndow.setVisible(false);
-                timeClockWindow.setVisible(false);
-
-            } else if (clickedButton == announcementButton) {
+            if (clickedButton == announcementButton) {
                 setButtonColor(homeButton, false);
                 setButtonColor(announcementButton, true);
                 setButtonColor(calendarButton, false);
